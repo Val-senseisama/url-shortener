@@ -1,0 +1,9 @@
+name = "url-shortener"
+main = "src/index.ts"
+compatibility_date = "2024-05-02"
+
+# Configuration variables
+[vars]
+# For production, set sensitive bindings (DATABASE_URL, REDIS_URL, REDIS_TOKEN)
+# via the dashboard or wrangler CLI (e.g. `wrangler secret put REDIS_TOKEN`).
+# For local dev, define them in a `.dev.vars` file in the root.

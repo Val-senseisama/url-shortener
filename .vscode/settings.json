@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.exclude": {
+    "**/worker-backup": true
+  },
+  "search.exclude": {
+    "**/worker-backup": true
+  }
+}
