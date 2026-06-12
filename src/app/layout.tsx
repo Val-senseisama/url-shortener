@@ -15,8 +15,42 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SnapLink | Production-Grade URL Shortener",
-  description: "Create short, trackable links with ultra-low latency redirection, L2 caching, and real-time analytics dashboards.",
+  title: {
+    default: "SnapLink | Edge-Native URL Shortener",
+    template: "%s | SnapLink"
+  },
+  description: "Create short, fast, trackable links with sub-30ms global redirection, L2 Redis caching, and real-time click analytics.",
+  keywords: ["url shortener", "link shortener", "edge redirection", "snaplink", "analytics", "marketing links", "vercel edge", "supabase link shortener"],
+  authors: [{ name: "SnapLink Team" }],
+  openGraph: {
+    title: "SnapLink | Edge-Native URL Shortener",
+    description: "Create short, fast, trackable links with sub-30ms global redirection, L2 Redis caching, and real-time click analytics.",
+    url: "https://snaplinks.zevbii.com",
+    siteName: "SnapLink",
+    images: [
+      {
+        url: "https://snaplinks.zevbii.com/icon.png",
+        width: 512,
+        height: 512,
+        alt: "SnapLink Logo",
+      }
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "SnapLink | Edge-Native URL Shortener",
+    description: "Create short, fast, trackable links with sub-30ms global redirection, L2 Redis caching, and real-time click analytics.",
+    images: ["https://snaplinks.zevbii.com/icon.png"],
+  },
+  icons: {
+    icon: "/icon.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
